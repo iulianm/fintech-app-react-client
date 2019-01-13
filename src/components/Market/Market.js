@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import SockJS from "sockjs-client";
 import Stomp from "stompjs";
 import StockPrice from "./StockPrice";
-import MarketDashboard from "./MarketDashboard";
+import LiveMarket from "./LiveMarket";
 
 var stompClient = null;
 
@@ -109,7 +109,7 @@ class Market extends Component {
         <StockPrice stock="FB" livePrice={this.state.LivePriceFB} />
         <StockPrice stock="GOOG" livePrice={this.state.LivePriceGOOG} />
         <StockPrice stock="MSFT" livePrice={this.state.LivePriceMSFT} />
-        <MarketDashboard />
+        <LiveMarket />
       </Fragment>
     );
   }

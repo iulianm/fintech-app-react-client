@@ -1,11 +1,8 @@
 import React, { Component, Fragment } from "react";
-// import PieChartBasic from "./Charts/PieChartBasic";
-// import PieChartData from "./Charts/PieChartData";
-// import PieChartResponsive from "./Charts/PieChartResponsive";
 import LineChart from "./Charts/Line/LineChart";
 import CandlestickChart from "./Charts/Candlestick/CandlestickChart";
 
-class MarketDashboard extends Component {
+class LiveMarket extends Component {
   constructor() {
     super();
 
@@ -734,8 +731,7 @@ class MarketDashboard extends Component {
     });
   render() {
     const { data_AAPL } = this.state;
-    const { width, height } = this.state;
-    const { margin } = this.state;
+    const { width, height, margin } = this.state;
 
     return (
       <Fragment>
@@ -746,4 +742,4 @@ class MarketDashboard extends Component {
     );
   }
 }
-export default MarketDashboard;
+export default LiveMarket;

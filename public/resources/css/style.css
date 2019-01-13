@@ -157,13 +157,13 @@ svg {
   fill-opacity: 0.5;
 }
 
-path {
+/* path {
   stroke: steelblue;
   stroke-width: 2px;
   fill: none;
-}
+} */
 
-.App-chart-container {
+/* .App-chart-container {
   padding: 15px;
   margin: 0 auto;
   margin-top: 30px;
@@ -185,4 +185,4 @@ path {
 
 .App-chart-source a {
   color: #757575;
-}
+} */
